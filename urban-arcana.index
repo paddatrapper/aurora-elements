@@ -4,7 +4,7 @@
     <name>Urban Arcana</name>
     <description>Explosive action and epic adventure fill the modern world when fantasy and reality collide. In Urban Arcana, heroes armed with swords, spells, shotguns, and cell phones dive headlong into trouble with monsters, mobsters, cabals, and corporations. Take a deep breath, and discover the realms of fantasy within the gritty shadows of the modern world.</description>
     <author url="https://preview.drivethrurpg.com/en/product/29548/Urban-Arcana-d20M">Wizards of the Coast</author>
-    <update version="0.0.1">
+    <update version="0.0.2">
       <file name="urban-arcana.index" url="https://raw.githubusercontent.com/paddatrapper/aurora-elements/main/urban-arcana.index" />
     </update>
   </info>
