@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Spells</name>
+    <update version="0.0.1">
+      <file name="spells.xml" url="https://raw.githubusercontent.com/paddatrapper/homebrew-content/main/urban-arcana/spells.xml" />
+    </update>
+  </info>
+  
+  <element name="Haywire" type="Spell" source="Urban Arcana" id="ID_WOTC_SOURCE_URBAN_ARCANA_SPELL_HAYWIRE">
+    <description>
+      <p>The <i>haywire</i> spell causes a single device to behave randomly and erratically, defying any attempts to bring it under control. Cash registers display random prices and open their money drawers repeatedly. Escalators surge forward, then reverse themselves. Automatic teller machines flash random patrons' account balances on the screen as they spew forth receipts (not money, though).</p>
+      <p class="indent">It's impossible to describe the exact effects of <i>haywire</i> on every modern device. In general, a machine subject to <i>haywire</i> functions as if someone were pressing random buttons or otherwise manipulating it randomly.</p>
+      <p class="indent">Turning off a device subject to a <i>haywire</i> spell doesn't work, because the spell disables the "off" switch. Cutting off the power supply (by unplugging it, for example) disables the device 1d4 rounds later, ending the spell.</p>
+      <p class="indent"><i>Material Component:</i> A small magnet.</p>
+      <p class="indent"><i>Target:</i> One object of up to 100 lb./level</p>
+      <p class="indent"><i>Saving Throw:</i> Will negate (object).</p>
+      <p class="indent"><i>Spell Resistance:</i> Yes (object).</p>
+    </description>
+    <setters>
+      <set name="level">Arcane 0, Divine 0</set>
+      <set name="school">Transmutation</set>
+      <set name="time">Attack action</set>
+      <set name="duration">1 minute/level</set>
+      <set name="range">Close (25 ft. + 5 ft./2 levels)</set>
+      <set name="hasVerbalComponents">true</set>
+      <set name="hasSomaticComponents">true</set>
+      <set name="hasMaterialComponents">true</set>
+      <set name="materialComponent">a small magnet</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  
+  <element name="Magic ID" type="Spell" source="Urban Arcana" id="ID_WOTC_SOURCE_URBAN_ARCANA_SPELL_MAGIC_ID">
+    <description>
+      <p>With this glamer, you make a small card of slip of paper appear to be a valid identification card of your choosing. For example, you might make a business card look like a driver's license, or a video club card look like an FBI identification card. The card bears your name, likeness, and all other data expected by anyone examining such a card. However, it is only visually accurate and does not contain any valid machine-readable data or electronic coding. You cannot use this spell to make an electronic passkey. The illusion lasts only as long as you touch the card, to a maximum of 5 rounds.</p>
+      <p class="indent">It's impossible to describe the exact effects of <i>haywire</i> on every modern device. In general, a machine subject to <i>haywire</i> functions as if someone were pressing random buttons or otherwise manipulating it randomly.</p>
+      <p class="indent">Turning off a device subject to a <i>haywire</i> spell doesn't work, because the spell disables the "off" switch. Cutting off the power supply (by unplugging it, for example) disables the device 1d4 rounds later, ending the spell.</p>
+      <p class="indent"><i>Effect:</i> Illusory identification card</p>
+      <p class="indent"><i>Saving Throw:</i> Will disbelief (if interacted with).</p>
+      <p class="indent"><i>Spell Resistance:</i> No.</p>
+    </description>
+    <setters>
+      <set name="level">Arcane 0</set>
+      <set name="school">Illusion</set>
+      <set name="time">Attack action</set>
+      <set name="duration">As long as you touch the card, to a maximum of 5 rounds</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponents">true</set>
+      <set name="hasSomaticComponents">true</set>
+      <set name="hasMaterialComponents">true</set>
+      <set name="materialComponent">a small card or slip of paper</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  
+  <element name="Degauss" type="Spell" source="Urban Arcana" id="ID_WOTC_SOURCE_URBAN_ARCANA_SPELL_DEGAUSS">
+    <description>
+      <p>By touching a single device that contains electronic files, such as a computer, external hard drive, CD-ROM, or magnetic disk, you erase all files on that device. The device is rendered empty of data.</p>
+      <p class="indent"><i>Effect:</i> Stored data is erased</p>
+      <p class="indent"><i>Saving Throw:</i> None.</p>
+      <p class="indent"><i>Spell Resistance:</i> No.</p>
+    </description>
+    <setters>
+      <set name="level">Arcane 1, Divine 1</set>
+      <set name="school">Transmutation</set>
+      <set name="time">Attack action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponents">true</set>
+      <set name="hasSomaticComponents">true</set>
+      <set name="hasMaterialComponents">false</set>
+      <set name="materialComponents"></set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+</elements>
