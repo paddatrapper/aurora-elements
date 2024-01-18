@@ -4,7 +4,7 @@
   <info>
     <name>Spells</name>
     <update version="0.0.1">
-      <file name="spells.xml" url="https://raw.githubusercontent.com/paddatrapper/aurora-index/main/urban-arcana/spells.xml" />
+      <file name="spells.xml" url="https://raw.githubusercontent.com/paddatrapper/aurora-elements/main/urban-arcana/spells.xml" />
     </update>
   </info>
   
