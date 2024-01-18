@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.0.2">
+    <update version="0.0.3">
       <file name="spells.xml" url="https://raw.githubusercontent.com/paddatrapper/aurora-elements/main/urban-arcana/spells.xml" />
     </update>
   </info>
@@ -18,7 +18,7 @@
       <p class="indent"><i>Spell Resistance:</i> Yes (object).</p>
     </description>
     <setters>
-      <set name="level">Arcane 0, Divine 0</set>
+      <set name="level">0</set>
       <set name="school">Transmutation</set>
       <set name="time">Attack action</set>
       <set name="duration">1 minute/level</set>
@@ -42,7 +42,7 @@
       <p class="indent"><i>Spell Resistance:</i> No.</p>
     </description>
     <setters>
-      <set name="level">Arcane 0</set>
+      <set name="level">0</set>
       <set name="school">Illusion</set>
       <set name="time">Attack action</set>
       <set name="duration">As long as you touch the card, to a maximum of 5 rounds</set>
@@ -64,7 +64,7 @@
       <p class="indent"><i>Spell Resistance:</i> No.</p>
     </description>
     <setters>
-      <set name="level">Arcane 1, Divine 1</set>
+      <set name="level">1</set>
       <set name="school">Transmutation</set>
       <set name="time">Attack action</set>
       <set name="duration">Instantaneous</set>
