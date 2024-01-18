@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.0.1">
+    <update version="0.0.2">
       <file name="spells.xml" url="https://raw.githubusercontent.com/paddatrapper/aurora-elements/main/urban-arcana/spells.xml" />
     </update>
   </info>
