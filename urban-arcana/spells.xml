@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.1.2">
+    <update version="0.2.0">
       <file name="spells.xml" url="https://raw.githubusercontent.com/paddatrapper/aurora-elements/main/urban-arcana/spells.xml" />
     </update>
   </info>
@@ -10,20 +10,17 @@
   <element name="Haywire" type="Spell" source="Urban Arcana" id="ID_WOTC_SOURCE_URBAN_ARCANA_SPELL_HAYWIRE">
     <supports>Druid, Wizard, Ranger</supports>
     <description>
-      <p>The <i>haywire</i> spell causes a single device to behave randomly and erratically, defying any attempts to bring it under control. Cash registers display random prices and open their money drawers repeatedly. Escalators surge forward, then reverse themselves. Automatic teller machines flash random patrons' account balances on the screen as they spew forth receipts (not money, though).</p>
+      <p>The <i>haywire</i> spell causes a single device of up to 100 lb. to behave randomly and erratically, defying any attempts to bring it under control. Cash registers display random prices and open their money drawers repeatedly. Escalators surge forward, then reverse themselves. Automatic teller machines flash random patrons' account balances on the screen as they spew forth receipts (not money, though).</p>
       <p class="indent">It's impossible to describe the exact effects of <i>haywire</i> on every modern device. In general, a machine subject to <i>haywire</i> functions as if someone were pressing random buttons or otherwise manipulating it randomly.</p>
       <p class="indent">Turning off a device subject to a <i>haywire</i> spell doesn't work, because the spell disables the "off" switch. Cutting off the power supply (by unplugging it, for example) disables the device 1d4 rounds later, ending the spell.</p>
-      <p class="indent"><i>Material Component:</i> A small magnet.</p>
-      <p class="indent"><i>Target:</i> One object of up to 100 lb./level</p>
-      <p class="indent"><i>Saving Throw:</i> Will negate (object).</p>
-      <p class="indent"><i>Spell Resistance:</i> Yes (object).</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the duration is increased by 1 minute per slot, the target weight is increased by 100 lb. per slot and the range is increased by 2.5 ft. per slot.</p>
     </description>
     <setters>
       <set name="level">0</set>
       <set name="school">Transmutation</set>
-      <set name="time">Attack action</set>
-      <set name="duration">1 minute/level</set>
-      <set name="range">Close (25 ft. + 5 ft./2 levels)</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">25 ft.</set>
       <set name="hasVerbalComponents">true</set>
       <set name="hasSomaticComponents">true</set>
       <set name="hasMaterialComponents">true</set>
@@ -36,22 +33,19 @@
   <element name="Magic ID" type="Spell" source="Urban Arcana" id="ID_WOTC_SOURCE_URBAN_ARCANA_SPELL_MAGIC_ID">
     <supports>Bard, Warlock, Wizard</supports>
     <description>
-      <p>With this glamer, you make a small card of slip of paper appear to be a valid identification card of your choosing. For example, you might make a business card look like a driver's license, or a video club card look like an FBI identification card. The card bears your name, likeness, and all other data expected by anyone examining such a card. However, it is only visually accurate and does not contain any valid machine-readable data or electronic coding. You cannot use this spell to make an electronic passkey. The illusion lasts only as long as you touch the card, to a maximum of 5 rounds.</p>
-      <p class="indent"><i>Effect:</i> Illusory identification card</p>
-      <p class="indent"><i>Saving Throw:</i> Will disbelief (if interacted with).</p>
-      <p class="indent"><i>Spell Resistance:</i> No.</p>
+      <p>With this illusion cantrip, you make a small card of slip of paper appear to be a valid identification card of your choosing. For example, you might make a business card look like a driver's license, or a video club card look like an FBI identification card. The card looks visually accurate and contains enough machine readable data to pass cursory inspection; however, not enough to fool sophisticated systems. Thus an illusory drivers license might be enough to convince a traffic official at a roadblock, but an illusory FBI identification card will not grant access to secure premises.</p>
     </description>
     <setters>
       <set name="level">0</set>
       <set name="school">Illusion</set>
-      <set name="time">Attack action</set>
-      <set name="duration">As long as you touch the card, to a maximum of 5 rounds</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 minute</set>
       <set name="range">Touch</set>
       <set name="hasVerbalComponents">true</set>
       <set name="hasSomaticComponents">true</set>
       <set name="hasMaterialComponents">true</set>
       <set name="materialComponent">a small card or slip of paper</set>
-      <set name="isConcentration">false</set>
+      <set name="isConcentration">true</set>
       <set name="isRitual">false</set>
     </setters>
   </element>
@@ -59,22 +53,47 @@
   <element name="Degauss" type="Spell" source="Urban Arcana" id="ID_WOTC_SOURCE_URBAN_ARCANA_SPELL_DEGAUSS">
   <supports>Warlock, Wizard, Paladin</supports>
     <description>
-      <p>By touching a single device that contains electronic files, such as a computer, external hard drive, CD-ROM, or magnetic disk, you erase all files on that device. The device is rendered empty of data.</p>
-      <p class="indent"><i>Effect:</i> Stored data is erased</p>
-      <p class="indent"><i>Saving Throw:</i> None.</p>
-      <p class="indent"><i>Spell Resistance:</i> No.</p>
+      <p>By touching a single device that contains electronic files, such as a computer, tablet, smart phone, external hard drive or a  CD/DVD/Blu-Ray with a magnet, you erase all files on that device. The device is rendered empty of data.</p>
     </description>
     <setters>
       <set name="level">1</set>
       <set name="school">Transmutation</set>
-      <set name="time">Attack action</set>
+      <set name="time">1 action</set>
       <set name="duration">Instantaneous</set>
       <set name="range">Touch</set>
       <set name="hasVerbalComponents">true</set>
       <set name="hasSomaticComponents">true</set>
-      <set name="hasMaterialComponents">false</set>
-      <set name="materialComponents"></set>
+      <set name="hasMaterialComponents">true</set>
+      <set name="materialComponent">a small magnet</set>
       <set name="isConcentration">false</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+  
+  <element name="Murmur's Haywire" type="Spell" source="Urban Arcana" id="ID_WOTC_SOURCE_URBAN_ARCANA_SPELL_MURMURS_HAYWIRE">
+    <supports>Druid, Wizard, Ranger</supports>
+    <description>
+      <p>This spell plays havoc with electronic devices, making the use of such devices impossible. Each electronic device in a 10-foot-radius sphere centered on a point you choose within range is subject to random behavior while it remains within the area. A device not held by a creature automatically affected. If an electronic device is held by a creature, that creature must succeed on a Wisdom saving throw or have the device affected by the spell.</p>
+      <p class="indent">At the start of each of your turns, roll a d6 for each affected device to determine its behavior. Except where otherwise indicated, that behavior lasts until the start of your next turn while this spell is in effect.</p>
+      <ul>
+      <li>1: The device behaves randomly and erratically, defying any attempts to bring it under control and functioning as if someone were pressing random buttons or otherwise manipulating it randomly.</li>
+      <li>2-4: The device freezes and does not function</li>
+      <li>5: The device experiences a power surge, causing an electric shock to the wielder (if any) and one random creature within 5 feet of the device. Each affected creature must make a Dexterity saving throw against your spell save DC, taking 6d6 lightning damage on a failed save, or half as much damage on a successful one.</li>
+      <li>6: The device is usable as normal.</li>
+      </ul>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the radius of the sphere affected by the spell increases by 5 feet for each slot level above 3rd.</p>
+    </description>
+    <setters>
+      <set name="level">3</set>
+      <set name="school">Enchantment</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">90 ft. (10 ft. radius)</set>
+      <set name="hasVerbalComponents">true</set>
+      <set name="hasSomaticComponents">true</set>
+      <set name="hasMaterialComponents">false</set>
+      <set name="materialComponent"></set>
+      <set name="isConcentration">true</set>
       <set name="isRitual">false</set>
     </setters>
   </element>
