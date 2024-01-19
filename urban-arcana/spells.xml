@@ -2,13 +2,13 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.1.0">
+    <update version="0.1.1">
       <file name="spells.xml" url="https://raw.githubusercontent.com/paddatrapper/aurora-elements/main/urban-arcana/spells.xml" />
     </update>
   </info>
   
   <element name="Haywire" type="Spell" source="Urban Arcana" id="ID_WOTC_SOURCE_URBAN_ARCANA_SPELL_HAYWIRE">
-    <<supports>Druid, Wizard, Ranger</supports>
+    <supports>Druid, Wizard, Ranger</supports>
     <description>
       <p>The <i>haywire</i> spell causes a single device to behave randomly and erratically, defying any attempts to bring it under control. Cash registers display random prices and open their money drawers repeatedly. Escalators surge forward, then reverse themselves. Automatic teller machines flash random patrons' account balances on the screen as they spew forth receipts (not money, though).</p>
       <p class="indent">It's impossible to describe the exact effects of <i>haywire</i> on every modern device. In general, a machine subject to <i>haywire</i> functions as if someone were pressing random buttons or otherwise manipulating it randomly.</p>
@@ -34,7 +34,7 @@
   </element>
   
   <element name="Magic ID" type="Spell" source="Urban Arcana" id="ID_WOTC_SOURCE_URBAN_ARCANA_SPELL_MAGIC_ID">
-    <<supports>Bard, Warlock, Wizard</supports>
+    <supports>Bard, Warlock, Wizard</supports>
     <description>
       <p>With this glamer, you make a small card of slip of paper appear to be a valid identification card of your choosing. For example, you might make a business card look like a driver's license, or a video club card look like an FBI identification card. The card bears your name, likeness, and all other data expected by anyone examining such a card. However, it is only visually accurate and does not contain any valid machine-readable data or electronic coding. You cannot use this spell to make an electronic passkey. The illusion lasts only as long as you touch the card, to a maximum of 5 rounds.</p>
       <p class="indent">It's impossible to describe the exact effects of <i>haywire</i> on every modern device. In general, a machine subject to <i>haywire</i> functions as if someone were pressing random buttons or otherwise manipulating it randomly.</p>
@@ -59,7 +59,7 @@
   </element>
   
   <element name="Degauss" type="Spell" source="Urban Arcana" id="ID_WOTC_SOURCE_URBAN_ARCANA_SPELL_DEGAUSS">
-    <<supports>Warlock, Wizard, Paladin</supports>
+  <supports>Warlock, Wizard, Paladin</supports>
     <description>
       <p>By touching a single device that contains electronic files, such as a computer, external hard drive, CD-ROM, or magnetic disk, you erase all files on that device. The device is rendered empty of data.</p>
       <p class="indent"><i>Effect:</i> Stored data is erased</p>
